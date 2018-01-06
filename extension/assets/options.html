@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GDAX Portfolio - Options</title>
+    <link href="../styles/options.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="options_container">
+      <h1>Set your API keys below</h1>
+      <p>Remember to provide this extension with <span>read-only</span> access.</p>
+      <div class="input_container">
+        <label for="input_api">Api Key</label>
+        <input id="input_api" type="text">
+        <label for="input_secret">Secret</label>
+        <input id="input_secret" type="text">
+        <label for="input_passphrase">Passphrase</label>
+        <input id="input_passphrase" type="text">
+        <div class=button_container>
+          <button id="button_update">Remember above keys.</button>
+          <button id="button_clear">Clear any stored keys.</button>
+        </div>
+      </div>
+      <!-- Message: Keys are set, failed, cleared! -->
+      <div class="message" id="storage_message" style="display:none"></div>
+    </div>
+  </body>
+  <script type="text/javascript" src="../js/keys.js"></script>
+  <script type="text/javascript" src="../js/options.js"></script>
+</html>

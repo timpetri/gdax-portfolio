@@ -1,0 +1,88 @@
+<!doctype html>
+<!-- Tim -->
+<html>
+  <head>
+    <title>Crypto-View</title>
+    <link href="../styles/popup.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div id="spinner" class="spinner" style="display:none">
+      <br>  
+      <div class="spinner-container">
+        <svg xmlns="http://www.w3.org/2000/svg" class="spinner-container__icon" viewBox="0 0 50 50">
+          <circle cx="25" cy="10" r="2"></circle>
+          <circle opacity=".3" cx="25" cy="40" r="2"></circle>
+          <circle opacity=".3" cx="32.5" cy="12" r="2"></circle>
+          <circle opacity=".3" cx="17.5" cy="38" r="2"></circle>
+          <circle opacity=".93" cx="17.5" cy="12" r="2"></circle>
+          <circle opacity=".3" cx="32.5" cy="38" r="2"></circle>
+          <circle opacity=".65" cx="10" cy="25" r="2"></circle>
+          <circle opacity=".3" cx="40" cy="25" r="2"></circle>
+          <circle opacity=".86" cx="12" cy="17.5" r="2"></circle>
+          <circle opacity=".3" cx="38" cy="32.5" r="2"></circle>
+          <circle opacity=".44" cx="12" cy="32.5" r="2"></circle>
+          <circle opacity=".3" cx="38" cy="17.5" r="2"></circle>
+        </svg>
+        </div>
+    </div>
+    <div class="portfolio_container">
+      <div class="portfolio_header">
+        <span>Your GDAX Portfolio</span>
+        <a href="https://www.gdax.com">gdax.com</a>
+      </div>
+      <div class="all_coins_container">
+        <div class="coin" id="LTC">
+          <div class="coin_general">
+            <img src="./ltc.svg"/>
+            <span class="coin_name">Litecoin</span>
+            <span class="price"></span>
+          </div>
+          <div class="balance_container">
+            <div class="amount"></div>
+            <div class="value"></div>
+          </div>
+        </div>
+        <div class="coin" id="ETH">
+          <div class="coin_general">
+            <img src="./eth.svg"/>
+            <span class="coin_name">Ethereum</span>
+            <span class="price"></span>
+          </div>
+          <div class="balance_container">
+            <div class="amount"></div>
+            <div class="value"></div>
+          </div>
+        </div>
+        <div class="coin" id="BCH">
+          <div class="coin_general">
+            <img src="./bch.svg"/>
+            <span class="coin_name">Bitcoin Cash</span>
+            <span class="price"></span>
+          </div>
+          <div class="balance_container">
+            <div class="amount"></div>
+            <div class="value"></div>
+          </div>
+        </div>
+        <div class="coin" id="BTC">
+          <div class="coin_general">
+            <img src="./btc.svg"/>
+            <span class="coin_name">Bitcoin</span>
+            <span class="price"></span>
+          </div>
+          <!-- Display flex, flex-direction: column, align-items: flex-end -->
+          <div class="balance_container">
+            <div class="amount"></div>
+            <div class="value"></div>
+          </div>
+        </div>
+      </div>
+      <div class="total_balance">Total Balance ≈ <span id="total"><span></div>
+    </div>
+    <script src="../js/keys.js"></script>
+    <script src="../js/lib/axios.js"></script>
+    <script src="../js/lib/crypto.js"></script>
+    <script src="../js/popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "GDAX Portfolio",
+  "short_name": "GDAX Portfolio",
+  "description": "View your GDAX portfolio just like Coinbase",
+  "version": "0.1",
+
+  "permissions": [
+    "https://api.gdax.com/",
+    "storage"
+  ],
+
+  "icons": {"16" : "images/icon16.png",
+           "48" : "images/icon48.png",
+           "128" : "images/icon128.png"},
+
+  "browser_action": {
+    "default_popup": "assets/popup.html",
+    "default_title": "GDAX Portfolio"
+  },
+
+  "options_page": "assets/options.html"
+}
